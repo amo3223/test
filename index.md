@@ -1,37 +1,60 @@
-## Welcome to GitHub Pages
+<!DOCTYPE html>
+<html lang="zh-tw">
 
-You can use the [editor on GitHub](https://github.com/k122787597john/test/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>King Tzeng的鐵人地圖</title>
+    <style type="text/css" media="screen">
+    html {
+        height: 100%;
+        width: 100%;
+    }
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+    #map {
+        position: absolute;
+        top: 25%;
+        left: 0;
+        height: 75%;
+        width: 100vw;
+    }
 
-### Markdown
+    #body {
+        height: 100%;
+        width: 100vw;
+        position: relative;
+        top: 0;
+        left: 0;
+    }
+    </style>
+</head>
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+<body>
+    <div class="body">
+        <h1>King Tzeng的鐵人地圖</h1>
+        <div id="map"></div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script>
+    function initMap() {
+        var Station_latlng = { lat: 25.046891, lng: 121.516602 }; // 台北車站的經緯度
+        var map = new google.maps.Map(document.getElementById('map'), {
+            zoom: 14, //放大的倍率
+            center: Station_latlng //初始化的地圖中心位置
+        });
 
-```markdown
-Syntax highlighted code block
+        //--------下面是呼叫一個新marker------
 
-# Header 1
-## Header 2
-### Header 3
+        var marker = new google.maps.Marker({
+            position: Station_latlng, //marker的放置位置
+            map: map //這邊的map指的是第四行的map變數
+        });
 
-- Bulleted
-- List
+    }
+    </script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfzh4lVZEE-hmjcjbRg6kfr5fqYq8j61M=initMap">
+    </script>
+</body>
 
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/k122787597john/test/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+</html>
