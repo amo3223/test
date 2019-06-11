@@ -35,6 +35,7 @@
         <h1>King Tzeng的鐵人地圖</h1>
         <div id="map"></div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     function initMap() {
         var Station_latlng = { lat: 25.046891, lng: 121.516602 }; // 台北車站的經緯度
@@ -52,7 +53,7 @@
 
     }
     </script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfzh4lVZEE-hmjcjbRg6kfr5fqYq8j61M=initMap">
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC_Za7RqKvUuEg2Nln0EcpUVN3k2fZtDuE&callback=initMap">
     </script>
 </body>
 
