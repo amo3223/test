@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>King Tzeng的鐵人地圖</title>
+    <title>地圖</title>
     <style type="text/css" media="screen">
     html {
         height: 100%;
@@ -32,7 +32,7 @@
 
 <body>
     <div class="body">
-        <h1>King Tzeng的鐵人地圖</h1>
+        <h1>地圖</h1>
         <div id="map"></div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
