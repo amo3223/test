@@ -35,7 +35,6 @@
         <h1>King Tzeng的鐵人地圖</h1>
         <div id="map"></div>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script>
     function initMap() {
         var Station_latlng = { lat: 25.046891, lng: 121.516602 }; // 台北車站的經緯度
